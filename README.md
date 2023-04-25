@@ -1,1 +1,1 @@
-# briefly-gpt
+# Briefly-GPT
