@@ -1,0 +1,33 @@
+.mainContainer {
+    width: var(--w100);
+    height: 10%;
+    background-color: var(--black-color);
+    display: var(--flex);
+    justify-content: space-between;
+    align-items: var(--flex-center);
+}
+
+.nameContainer {
+    padding-left: .5rem;
+}
+
+.name {
+    margin: var(--m0);
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: .1rem;
+}
+
+.nameSpan {
+    font-size: 2.5rem;
+}
+
+.menuContainer {
+    padding-right: 1rem;
+}
+
+.menuIcon {
+    color: var(--white-color);
+    font-size: 3rem;
+    transition: all 0.3s ease-in-out;
+}
