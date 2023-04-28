@@ -1,0 +1,24 @@
+.mainContainer {
+    width: var(--w100);
+    height: var(--h100);
+    background-color: rgba(0, 0, 0, 0.7);
+    display: var(--flex);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.navigationContainer {
+    width: 80%;
+    height: var(--h100);
+    background-color: var(--white-color);
+}
+
+.menuIcon {
+    color: var(--white-color);
+    font-size: 3rem;
+    margin-top: .8rem;
+    margin-left: .3rem;
+    border: .3rem solid var(--white-color);
+}

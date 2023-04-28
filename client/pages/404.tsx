@@ -1,6 +1,7 @@
 import Head from "next/head";
+import { type FC } from 'react';
 
-export default function Custom404() {
+const Custom404: FC = (): JSX.Element => {
     return (
         <div className={"not-found-container"}>
             <Head>
@@ -10,4 +11,6 @@ export default function Custom404() {
             <h2 className={"not-found-text"}>Page Not Found</h2>
         </div>
     );
-}
+};
+
+export default Custom404;

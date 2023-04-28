@@ -1,12 +1,18 @@
 body {
     margin: 0;
+    background-color: var(--white-color);
 }
 
 :root {
     --w100: 100%;
+    --h100: 100%;
 
     --white-color: #fff;
     --black-color: #000;
+
+    --white-button-text-color: #f5f5f5;
+    --grey-text-color: #666;
+    --orange-color: #fb5607;
 
     --m0: 0;
     --p0: 0;
@@ -14,6 +20,22 @@ body {
     --flex: flex;
     --flex-center: center;
     --flex-column: column;
+    --flex-between: space-between;
+    --flex-around: space-around;
+
+    --border-none: none;
+    --border-button-radius: 0.625rem;
+    --border-image-section-to-left:linear-gradient(45deg, #ffffff, #abbaab) 10;
+    --border-image-section-to-right: linear-gradient(45deg, #abbaab, #ffffff) 10;
+    --border-box: border-box;
+
+    /*border-top: .1rem solid;*/
+    /*border-image: linear-gradient(to right, #00b4db, #0083b0, #6a5acd) 1 round;*/
+}
+
+.main-layout-container {
+    width: var(--w100);
+    height: 100vh;
 }
 
 .not-found-container {
@@ -21,11 +43,6 @@ body {
     display: var(--flex);
     flex-direction: var(--flex-column);
     align-items: var(--flex-center);
-}
-
-.main-layout-container {
-    width: var(--w100);
-    height: 100vh;
 }
 
 .not-found-error {

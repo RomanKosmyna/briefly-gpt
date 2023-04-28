@@ -1,12 +1,21 @@
-import '@/styles/globals.css';
-import React from "react";
 import type { AppProps } from 'next/app';
-import {MainLayout} from "@/layouts";
+import { setupStore } from "@/redux/store";
+import { Provider } from "react-redux";
 
-export default function App({ Component, pageProps }: AppProps): JSX.Element {
+import '@/styles/globals.css';
+
+import { MainLayout } from "@/layouts";
+
+const store = setupStore();
+
+const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
-      <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
+      <Provider store={store}>
+        <MainLayout>
+            <Component {...pageProps} />
+        </MainLayout>
+      </Provider>
   );
-}
+};
+
+export default App;

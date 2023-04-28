@@ -1,0 +1,83 @@
+.mainContainer {
+    width: var(--w100);
+    display: var(--flex);
+    flex-direction: var(--flex-column);
+    align-items: var(--flex-center);
+    background-color: var(--white-color);
+}
+
+.sloganContainer {
+    width: var(--w100);
+    display: var(--flex);
+    flex-direction: var(--flex-column);
+    justify-content: var(--flex-center);
+}
+
+.slogan {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -.02em;
+    margin: 1rem 0 0;
+    padding: 1rem;
+}
+
+.orange {
+    color: var(--orange-color);
+}
+
+.gradient {
+    background: linear-gradient(180deg,#555,#000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sloganText {
+    text-align: center;
+    margin: 0 2.3rem;
+    letter-spacing: -.01em;
+    font-size: 1.1rem;
+
+}
+
+.sloganText p {
+    color: var(--grey-text-color);
+}
+
+.featureContainer {
+    background: radial-gradient(50% 50% at 50% 50%, #fff 0, #fafafa 100%);
+    width: var(--w100);
+    display: var(--flex);
+    flex-direction: var(--flex-column);
+    padding: 0 1rem;
+    box-sizing: var(--border-box);
+    border-top: .1rem solid;
+    border-image: var(--border-image-section-to-right);
+}
+
+.featureContainer > h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 0;
+    background: linear-gradient(to right, #000000, #555555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+}
+
+.features {
+    width: var(--w100);
+    display: var(--flex);
+    justify-content: var(--flex-around);
+    padding-bottom: 1.5rem;
+}
+
+.aboutContainer {
+    width: var(--w100);
+    border-top: .1rem solid;
+    border-image: var(--border-image-section-to-left);
+}
+
+.aboutBtn {
+    width: 50%;
+}

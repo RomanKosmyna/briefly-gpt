@@ -1,35 +1,38 @@
-import React, {type FC, useState} from "react";
+import { type FC } from "react";
 import styles from "./Header.module.css";
 
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import { useAppDispatch, useAppSelector } from "@/hooks/redux-hook";
+import { toggleActions } from "@/redux";
 
-type ToggleProps = () => void;
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 const Header: FC = () => {
-    const [active, setActive] = useState(false);
-    
-    const toggle: ToggleProps = () => {
-        setActive(!active);
+    const dispatch = useAppDispatch();
+    const { sidebarActive } = useAppSelector(state => state.toggleReducer);
+
+    const toggle = (): void => {
+        dispatch(toggleActions.toggleSidebar(!sidebarActive));
     };
-    
+
     return (
         <div className={styles.mainContainer}>
             <div className={styles.nameContainer}>
-                <h1 className={styles.name}>
-                    Briefly
-                    <span className={styles.nameSpan}>GPT</span>
+                <h1 className={styles.logo}>
+                  <span>B</span>
+                  <span>r</span>
+                  <span>i</span>
+                  <span>e</span>
+                  <span>f</span>
+                  <span>l</span>
+                  <span>y</span>
+                  <span className={styles.nameSpan}>GPT</span>
                 </h1>
             </div>
             <div className={styles.menuContainer}>
-                {active ? (
-                    <CloseRoundedIcon className={styles.menuIcon} fontSize={"large"} onClick={toggle}/>
-                ) : (
-                    <MenuRoundedIcon className={styles.menuIcon} fontSize={"large"} onClick={toggle}/>
-                )}
+                <MenuRoundedIcon className={styles.menuIcon} fontSize={"large"} onClick={toggle}/>
             </div>
         </div>
     );
 };
 
-export {Header};
+export { Header };
