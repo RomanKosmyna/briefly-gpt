@@ -1,0 +1,38 @@
+.mainContainer {
+    width: var(--w100);
+    background: var(--section-background);
+}
+
+.guideContainer {
+    display: var(--flex);
+    flex-direction: var(--flex-column);
+    align-items: var(--flex-center);
+    border-radius: 0.625rem;
+    margin: 3rem;
+    text-align: justify;
+    background: linear-gradient(110deg,#333 .06%,#222);
+    position: relative;
+}
+
+.closeIcon {
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+    color: var(--white-color);
+}
+
+.guideContainer > h3 {
+    color: var(--orange-color);
+    font-size: 1.3rem;
+    margin: .4rem 0;
+}
+
+.guideContainer ol {
+    color: #eaeaea;
+    padding: 1.3rem;
+    margin: 0;
+}
+
+.guideContainer li {
+    margin: .4rem 0;
+}

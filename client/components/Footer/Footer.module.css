@@ -1,0 +1,25 @@
+.mainContainer {
+    box-sizing: var(--border-box);
+    width: var(--w100);
+    height: 220px;
+    display: var(--flex);
+    flex-direction: var(--flex-column);
+    justify-content: var(--flex-between);
+}
+
+.navigationContainer {
+    display: var(--flex);
+    justify-content: var(--flex-around);
+}
+
+.copyrightContainer {
+    display: var(--flex);
+    flex-direction: var(--flex-column);
+    align-items: var(--flex-center);
+    color: var(--grey-text-color);
+    margin-bottom: .8rem;
+}
+
+.copyrightContainer > p {
+    margin: .2rem 0 0;
+}

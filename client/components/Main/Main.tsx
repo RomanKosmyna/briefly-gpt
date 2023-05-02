@@ -1,7 +1,11 @@
 import { type FC } from 'react';
 
-import styles from './Main.module.css';
 import FeatureButton from '@/components/FeatureButton/FeatureButton';
+import MainSection from '@/components/MainSection/MainSection';
+import BorderLeft from '@/components/BorderLeft/BorderLeft';
+
+import styles from './Main.module.css';
+import BorderRight from '@/components/BorderRight/BorderRight';
 
 const Main: FC = (): JSX.Element => {
 
@@ -34,7 +38,7 @@ const Main: FC = (): JSX.Element => {
                          </>}
                          bgcolor={'black'}
           />
-          <FeatureButton link={'/feature2'}
+          <FeatureButton link={'/summary'}
                          text={<>
                            <span>Quick summary, </span>
                            <br />
@@ -44,15 +48,24 @@ const Main: FC = (): JSX.Element => {
           />
         </div>
       </div>
-      <div className={styles.aboutContainer}>
-        <h2>About Us</h2>
-        <p>Curious about the tools and techniques
-          we're using to drive learning forward?
-          Discover more about our work now.</p>
-        <div className={styles.aboutBtn}>
-          <FeatureButton link={"/about"} text={"Learn more"} bgcolor={"black"}/>
-        </div>
-      </div>
+      <BorderLeft />
+      <MainSection
+        name={'Our Blog'}
+        content={'Stay updated with our latest news and insights on our blog.'}
+        link={'/blog'}
+        text={'Read more'}
+      />
+      <BorderRight />
+      <MainSection
+        name={'About Us'}
+        content={'Curious about the tools and techniques\n' +
+          '          we\'re using to drive learning forward?\n' +
+          '          Discover more about our work now.'}
+        link={'/about'}
+        text={'Learn more'}
+        bg={"yes"}
+      />
+      <BorderLeft />
     </div>
   );
 };

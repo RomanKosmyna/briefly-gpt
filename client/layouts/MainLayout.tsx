@@ -1,5 +1,5 @@
 import React, { type FC, type ReactNode } from 'react';
-import { Header, Sidebar } from "@/components";
+import { Header, Sidebar, Footer } from "@/components";
 import { useAppSelector } from "@/hooks/redux-hook";
 
 interface Props {
@@ -14,6 +14,7 @@ const MainLayout: FC<Props> = ( { children }: Props ) => {
             <Header/>
             {sidebarActive && <Sidebar/>}
             {children}
+            <Footer/>
         </div>
     );
 };

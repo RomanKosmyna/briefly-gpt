@@ -1,10 +1,18 @@
 import { type FC } from 'react';
+import Link from 'next/link';
 
-const NavigationButton: FC = () => {
+import styles from "./NavigationButton.module.css";
+
+interface IProps {
+  link: string;
+  text: string;
+}
+
+const NavigationButton: FC<IProps> = ({ link, text }) => {
   return (
-    <div>
-      
-    </div>
+    <Link href={link}>
+      <button type={"button"} className={styles.button}>{text}</button>
+    </Link>
   );
 };
 

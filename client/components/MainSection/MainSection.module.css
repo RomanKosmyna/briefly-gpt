@@ -1,0 +1,34 @@
+.container {
+    width: var(--w100);
+    display: var(--flex);
+    flex-direction: var(--flex-column);
+    align-items: var(--flex-center);
+}
+
+.container > h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    background: linear-gradient(to left, #000000, #555555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container > p {
+    margin: 0 3rem 1rem;
+    text-align: justify;
+    letter-spacing: -.01em;
+    font-size: 1.1rem;
+    color: var(--grey-text-color);
+}
+
+.container > a {
+    margin: 1.6rem 0 1.3rem;
+}
+
+.changedBackground {
+    background: var(--section-background);
+}
+
+.default {
+    background-color: var(--white-color);
+}

@@ -1,11 +1,18 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     background-color: var(--white-color);
+    min-height: 100%;
 }
 
 :root {
     --w100: 100%;
     --h100: 100%;
+
+    --section-background: radial-gradient(50% 50% at 50% 50%, #fff 0, #fafafa 100%);
 
     --white-color: #fff;
     --black-color: #000;
@@ -25,17 +32,15 @@ body {
 
     --border-none: none;
     --border-button-radius: 0.625rem;
-    --border-image-section-to-left:linear-gradient(45deg, #ffffff, #abbaab) 10;
-    --border-image-section-to-right: linear-gradient(45deg, #abbaab, #ffffff) 10;
+    --border-section-to-left: linear-gradient(45deg, #ffffff, #abbaab) 10;
+    --border-section-to-right: linear-gradient(45deg, #abbaab, #ffffff) 10;
     --border-box: border-box;
-
-    /*border-top: .1rem solid;*/
-    /*border-image: linear-gradient(to right, #00b4db, #0083b0, #6a5acd) 1 round;*/
 }
 
 .main-layout-container {
     width: var(--w100);
-    height: 100vh;
+    display: var(--flex);
+    flex-direction: var(--flex-column);
 }
 
 .not-found-container {

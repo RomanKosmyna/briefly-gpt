@@ -45,24 +45,23 @@
 }
 
 .featureContainer {
-    background: radial-gradient(50% 50% at 50% 50%, #fff 0, #fafafa 100%);
+    background: var(--section-background);
     width: var(--w100);
     display: var(--flex);
     flex-direction: var(--flex-column);
     padding: 0 1rem;
     box-sizing: var(--border-box);
     border-top: .1rem solid;
-    border-image: var(--border-image-section-to-right);
+    border-image: var(--border-section-to-right);
 }
 
 .featureContainer > h2 {
     text-align: center;
     font-size: 2rem;
-    margin: 1rem 0 0;
+    margin: 2.4rem 0 0;
     background: linear-gradient(to right, #000000, #555555);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0.8;
 }
 
 .features {
@@ -70,14 +69,4 @@
     display: var(--flex);
     justify-content: var(--flex-around);
     padding-bottom: 1.5rem;
-}
-
-.aboutContainer {
-    width: var(--w100);
-    border-top: .1rem solid;
-    border-image: var(--border-image-section-to-left);
-}
-
-.aboutBtn {
-    width: 50%;
 }

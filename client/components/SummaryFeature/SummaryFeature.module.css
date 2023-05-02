@@ -1,0 +1,16 @@
+.mainContainer {
+    width: var(--w100);
+    display: var(--flex);
+    flex-direction: var(--flex-column);
+    align-items: var(--flex-center);
+}
+
+.mainContainer > h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 2.8rem .6rem .4rem;
+}
+
+.highlightOrange {
+    color: var(--orange-color);
+}

@@ -1,0 +1,7 @@
+.border {
+    width: var(--w100);
+    display: block;
+    height: 0.0625rem;
+    background: linear-gradient(45deg, #abbaab, #ffffff);
+    border: none;
+}
